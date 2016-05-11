@@ -1,0 +1,7 @@
+E:\!SmartHouse\SmartHouse\WebForm\bin\WebForm.dll.config
+E:\!SmartHouse\SmartHouse\WebForm\bin\WebForm.dll
+E:\!SmartHouse\SmartHouse\WebForm\bin\WebForm.pdb
+E:\!SmartHouse\SmartHouse\WebForm\bin\CleverHouse.dll
+E:\!SmartHouse\SmartHouse\WebForm\obj\Debug\WebForm.dll
+E:\!SmartHouse\SmartHouse\WebForm\obj\Debug\WebForm.pdb
+E:\!SmartHouse\SmartHouse\WebForm\obj\Debug\WebForm.csprojResolveAssemblyReference.cache

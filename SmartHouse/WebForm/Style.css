@@ -1,0 +1,153 @@
+﻿@font-face {
+    font-family: "GothicRus Condenced Medium";
+    src: url('/Fonts/GothicRus Condenced Medium.ttf');
+    font-weight: bold;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: lightgray;
+    margin: 0 auto;
+    width: 1100px;
+    font-family: "GothicRus Condenced Medium";
+    font-size: 20px;
+}
+ListItem{
+    background-color: khaki;
+}
+
+#addDevicesButton {
+    font-family: "GothicRus Condenced Medium";
+    font-size: 25px;
+}
+#headerLine{
+    text-align: center;
+}
+#dropDownDevicesList{
+    font-family: "GothicRus Condenced Medium";
+    font-size: 25px;
+    background-image: url('/Images/BackgroundLbl.png');
+}
+devBody{
+    background-color: khaki;
+}
+.device-div{
+        display: block;
+    float: left;
+    margin: 3px;
+	margin-top:10px;
+    padding: 3px;
+	width: 350px;
+    height: 430px;
+	background-image: url('/Images/BackgrounDev.png');
+	border-radius:10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    		font-family: "GothicRus Condenced Medium";
+     font-size: 20px;
+    
+}
+.lbl {
+    width: 102px;
+    height: 37px;
+    background-image: url('/Images/BackgroundLbl.png');
+    margin: 5px;
+}
+
+.switchOn {
+    width: 90px;
+    height: 30px;
+    background-image: url('/Images/statusDeviceOn.png');
+    margin: 4px;
+}
+
+.switchOff {
+    width: 90px;
+    height: 30px;
+    background-image: url('/Images/statusDeviceOff.png');
+    margin: 4px;
+}
+
+.leftBt {
+    width: 28px;
+    height: 29px;
+    background-image: url('/Images/leftButton.png');
+    margin: 4px;
+}
+
+    .leftBt:hover {
+        background-image: url('/Images/leftButtonFocus.png');
+    }
+
+.rightBt {
+    width: 28px;
+    height: 29px;
+    background-image: url('/Images/rightButton.png');
+    margin: 4px;
+}
+
+    .rightBt:hover {
+        background-image: url('/Images/rightButtonFocus.png');
+    }
+
+.btbDelete {
+    width: 115px;
+    height: 33px;
+    background-image: url('/Images/Delete.png');
+    margin: 4px;
+    padding: 4px;
+    text-align: center;
+}
+
+.reset {
+    width: 115px;
+    height: 33px;
+    background-image: url('/Images/Reset.png');
+    margin: 4px;
+    padding: 4px;
+}
+
+.btbUseDev {
+    width: 115px;
+    height: 33px;
+    background-image: url('/Images/UseDevice.png');
+    margin: 4px;
+    padding: 4px;
+}
+
+.btbQuick {
+    width: 115px;
+    height: 33px;
+    background-image: url('/Images/Quick.png');
+    margin: 4px;
+    padding: 4px;
+}
+
+.btbBoost {
+    width: 115px;
+    height: 33px;
+    background-image: url('/Images/Boost.png');
+    margin: 4px;
+    padding: 4px;
+}
+
+.btbUnh {
+    width: 115px;
+    height: 33px;
+    background-image: url('/Images/Unhurriedly.png');
+    margin: 4px;
+    padding: 4px;
+}
+
+.btbLow {
+    width: 115px;
+    height: 33px;
+    background-image: url('/Images/Low.png');
+    margin: 4px;
+    padding: 4px;
+}
