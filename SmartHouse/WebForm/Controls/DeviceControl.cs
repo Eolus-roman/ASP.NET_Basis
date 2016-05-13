@@ -203,7 +203,7 @@ namespace WebForm
                 //app.Text = "Use Device";
                 app.Click += ButtonClick;
                 Controls.Add(app);
-                Controls.Add(Span("<br />"));
+             //   Controls.Add(Span("<br />"));
             }
            
 
@@ -211,7 +211,7 @@ namespace WebForm
           //  deleteButton.Text = "Delete";
             deleteButton.Click += DeleteButtonClick;
             Controls.Add(deleteButton);
-            Controls.Add(Span("<br />"));
+         //   Controls.Add(Span("<br />"));
         }
         protected void DeleteButtonClick(object sender, EventArgs e)
         {
