@@ -11,7 +11,7 @@
 
 <body>
     <header runat="server" class="header">	
-        
+        <img src="Images/Logo.png" />
 	</header>
     <form id="form1" runat="server" class="wrapper">
         <div id="headerLine">

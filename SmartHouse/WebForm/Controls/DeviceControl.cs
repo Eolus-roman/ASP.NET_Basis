@@ -23,7 +23,7 @@ namespace WebForm
         private IOpenOrClose orc;
         private IResetSettings rs;
         private ISpeed sp;
-        private IStatus st;
+        
         private IUse us;
         private IVolume vol;
 
@@ -46,16 +46,23 @@ namespace WebForm
             status.Text = DevicesDictionary[id].Name + "<br>" + "<br>" + DevicesDictionary[id] + "<br>";
             status.CssClass = "lblSt";
             Controls.Add(status);
-           // Controls.Add(Span("<br />"));
+            // Controls.Add(Span("<br />"));
             //======================================
-            onButton = Button("on ", "switchOn", "Switch On"); // id, CssClass, ToolTip
-            onButton.Click += ButtonClick;
-            Controls.Add(onButton);
+            if (DevicesDictionary[id].Status == false)
+            {
+                onButton = Button("on ", "switchOff", "Switch On"); // id, CssClass, ToolTip
+                onButton.Click += ButtonClick;
+                Controls.Add(onButton);
+                Controls.Add(Span("<br />"));
+            }
             //=========
-            offButton = Button("off ", "switchOff", "Switch Off");
-            offButton.Click += ButtonClick;
-            Controls.Add(offButton);
-            Controls.Add(Span("<br />"));
+            if (DevicesDictionary[id].Status == true)
+            {
+                offButton = Button("off ", "switchOn", "Switch Off");
+                offButton.Click += ButtonClick;
+                Controls.Add(offButton);
+                Controls.Add(Span("<br />"));
+            }
             //======================================
             if (DevicesDictionary[id] is IChangeEnum)
             {
@@ -170,28 +177,20 @@ namespace WebForm
             //======================================
             if (DevicesDictionary[id] is ISpeed)
             {
-                //Label lbSp = Label("speed ", "lblCenter", "Speed");
-                //Controls.Add(lbSp);
-                //Controls.Add(Span("<br />"));
-                //======================================
                 Button low = Button("low ", "btbLow", "Speed = low");
-                //low.Text = "Low";
                 low.Click += ButtonClick;
                 Controls.Add(low);
                 //=========
                 Button unh = Button("unh ", "btbUnh", "ISpeed = Unhurriedly");
-               // unh.Text = "Unhurriedly";
                 unh.Click += ButtonClick;
                 Controls.Add(unh);
                 Controls.Add(Span("<br />"));
                 //======================================
                 Button boost = Button("boost ", "btbBoost", "ISpeed = Boost");
-                //boost.Text = "Boost";
                 boost.Click += ButtonClick;
                 Controls.Add(boost);
                 //=========
                 Button quick = Button("quick ", "btbQuick", "ISpeed = Quick");
-               // quick.Text = "Quick";
                 quick.Click += ButtonClick;
                 Controls.Add(quick);
                 Controls.Add(Span("<br />"));
@@ -203,15 +202,15 @@ namespace WebForm
                 //app.Text = "Use Device";
                 app.Click += ButtonClick;
                 Controls.Add(app);
-             //   Controls.Add(Span("<br />"));
+                //   Controls.Add(Span("<br />"));
             }
-           
+
 
             Button deleteButton = Button("remove ", "btbDelete", "Delete Device");
-          //  deleteButton.Text = "Delete";
+            //  deleteButton.Text = "Delete";
             deleteButton.Click += DeleteButtonClick;
             Controls.Add(deleteButton);
-         //   Controls.Add(Span("<br />"));
+            //   Controls.Add(Span("<br />"));
         }
         protected void DeleteButtonClick(object sender, EventArgs e)
         {
