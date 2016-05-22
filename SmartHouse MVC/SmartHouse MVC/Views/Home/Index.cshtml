@@ -1,0 +1,140 @@
+﻿@{
+    Layout = null;
+}
+@using System.Web.Mvc.Html;
+@using Smart_House;
+@model IDictionary<int, Device>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <img id="logo" src="~/Content/Images/Logo.png">
+        
+    </header>
+    @using (Html.BeginForm("Add", "Home"))
+    {
+        <form id="form1" class="wrapper">
+            <div id="headerLine">
+                @Html.DropDownList("deviceType", (IEnumerable<SelectListItem>)ViewBag.DevicesList)
+                <input type="submit" id="addDevicesButton" value="ADD">
+            </div>
+            <div class="devicePanel" id="devicePanel">
+                @foreach (var item in Model)
+                {
+                    <div class="device-div">
+                        <label class="NameDev">@item.Value.Name</label>
+                        <p class="StrDev">@item.Value.ToString()</p>
+                        @if (item.Value.Status == false)
+                        {
+                            <a class="switchOff" href="/Home/Operation/@item.Key/on"><img src="~/Content/Images/statusDeviceOff.png" /></a>
+                        }
+                        @if (item.Value.Status == true)
+                        {
+                            <a class="switchOn" href="/Home/Operation/@item.Key/off"><img src="~/Content/Images/statusDeviceOn.png" /></a>
+                        }
+                        @*=====================================*@
+                        @if (item.Value is IChangeEnum)
+                        {
+                            <a class="leftBt" href="/Home/Operation/@item.Key/previous"><img src="~/Content/Images/leftButton.png" /></a>
+                            if (item.Value is IFridgeMark)
+                            {
+                                <label class="lbl">Temperature Lvl</label>
+                            }
+                            if (item.Value is IHooverMark)
+                            {
+                                <label class="lbl">Clean Lvl</label>
+                            }
+                            if (item.Value is IBicycleMark)
+                            {
+                                <label class="lbl">Relief Lvl</label>
+                            }
+                            if (item.Value is ITelevisionMark)
+                            {
+                                <label class="lbl">Channel</label>
+                            }
+                            if (item.Value is IWarhammerMark)
+                            {
+                                <label class="lbl">Battle Place</label>
+                            }
+                            <a class="rightBt" href="/Home/Operation/@item.Key/next"><img src="~/Content/Images/rightButton.png" /></a>
+                            <br />
+                        }
+                        @*=====================================*@
+                        @if (item.Value is IVolume)
+                        {
+                            <a class="leftBt" href="/Home/Operation/@item.Key/minus"><img src="~/Content/Images/leftButton.png" /></a>
+                            <label class="lbl">Volume</label>
+                            <a class="rightBt" href="/Home/Operation/@item.Key/plus"><img src="~/Content/Images/rightButton.png" /></a>
+                            <br />
+                        }
+                        @*=====================================*@
+                        @if (item.Value is IOpenOrClose)
+                        {
+                            <label class="lblOC">Open or Close</label>
+                            if ((item.Value as IOpenOrClose).StatusOpen == true)
+                            {
+                                <a class="switchOpen" href="/Home/Operation/@item.Key/close"><img src="~/Content/Images/statusDeviceOn.png" /></a>
+                            }
+                            if ((item.Value as IOpenOrClose).StatusOpen == false)
+                            {
+                                <a class="switchClose" href="/Home/Operation/@item.Key/open"><img src="~/Content/Images/statusDeviceOff.png" /></a>
+                            }
+                            <br />
+                        }
+                        @*=====================================*@
+                        @if (item.Value is IResetSettings)
+                        {
+                            if (item.Value is IBicycleMark)
+                            {
+                                <label class="lbl">Reset Pulse</label>
+                            }
+                            if (item.Value is IHooverMark)
+                            {
+                                <label class="lbl">Reset Pulse</label>
+                            }
+                            <a class="reset" href="/Home/Operation/@item.Key/rfp"><img src="~/Content/Images/Reset.png" /></a>
+                            <br />
+                            if (item.Value is IBicycleMark)
+                            {
+                                <label class="lbl">Reset Speed</label>
+                            }
+                            if (item.Value is IHooverMark)
+                            {
+                                <label class="lbl">Сharge Accumulator</label>
+                            }
+                            <a class="reset" href="/Home/Operation/@item.Key/rsp"><img src="~/Content/Images/Reset.png" /></a>
+                            <br />
+                        }
+                        @*=====================================*@
+                        @if (item.Value is ISpeed)
+                        {
+                            <a class="btbLow" href="/Home/Operation/@item.Key/low"><img src="~/Content/Images/Low.png" /></a>
+                            <a class="btbUnh" href="/Home/Operation/@item.Key/unh"><img src="~/Content/Images/Unhurriedly.png" /></a>
+                            <br />
+                            <a class="btbBoost" href="/Home/Operation/@item.Key/boost"><img src="~/Content/Images/Boost.png" /></a>
+                            <a class="btbQuick" href="/Home/Operation/@item.Key/quick"><img src="~/Content/Images/Quick.png" /></a>
+                            <br />
+                        }
+                        @*=====================================*@
+                        @if (item.Value is IUse)
+                        {
+                            <a class="btbUseDev" href="/Home/Operation/@item.Key/app"><img src="~/Content/Images/UseDevice.png" /></a>
+                        }
+                        @*=====================================*@
+                        <a class="btbDelete" href="/Home/Delete/@item.Key"><img src="~/Content/Images/Delete.png" /></a>
+                    </div>
+
+                }
+            </div>
+        </form>
+    }
+</body>
+</html>

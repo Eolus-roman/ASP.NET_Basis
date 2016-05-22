@@ -1,0 +1,27 @@
+E:\!SmartHouse\SmartHouse MVC\SmartHouse MVC\bin\SmartHouse MVC.dll.config
+E:\!SmartHouse\SmartHouse MVC\SmartHouse MVC\bin\SmartHouse MVC.dll
+E:\!SmartHouse\SmartHouse MVC\SmartHouse MVC\bin\SmartHouse MVC.pdb
+E:\!SmartHouse\SmartHouse MVC\SmartHouse MVC\bin\Antlr3.Runtime.dll
+E:\!SmartHouse\SmartHouse MVC\SmartHouse MVC\bin\Microsoft.Web.Infrastructure.dll
+E:\!SmartHouse\SmartHouse MVC\SmartHouse MVC\bin\Newtonsoft.Json.dll
+E:\!SmartHouse\SmartHouse MVC\SmartHouse MVC\bin\Smart House.dll
+E:\!SmartHouse\SmartHouse MVC\SmartHouse MVC\bin\System.Web.Helpers.dll
+E:\!SmartHouse\SmartHouse MVC\SmartHouse MVC\bin\System.Web.Mvc.dll
+E:\!SmartHouse\SmartHouse MVC\SmartHouse MVC\bin\System.Web.Optimization.dll
+E:\!SmartHouse\SmartHouse MVC\SmartHouse MVC\bin\System.Web.Razor.dll
+E:\!SmartHouse\SmartHouse MVC\SmartHouse MVC\bin\System.Web.WebPages.Deployment.dll
+E:\!SmartHouse\SmartHouse MVC\SmartHouse MVC\bin\System.Web.WebPages.dll
+E:\!SmartHouse\SmartHouse MVC\SmartHouse MVC\bin\System.Web.WebPages.Razor.dll
+E:\!SmartHouse\SmartHouse MVC\SmartHouse MVC\bin\WebGrease.dll
+E:\!SmartHouse\SmartHouse MVC\SmartHouse MVC\bin\System.Web.Helpers.xml
+E:\!SmartHouse\SmartHouse MVC\SmartHouse MVC\bin\System.Web.Mvc.xml
+E:\!SmartHouse\SmartHouse MVC\SmartHouse MVC\bin\System.Web.Optimization.xml
+E:\!SmartHouse\SmartHouse MVC\SmartHouse MVC\bin\System.Web.Razor.xml
+E:\!SmartHouse\SmartHouse MVC\SmartHouse MVC\bin\System.Web.WebPages.xml
+E:\!SmartHouse\SmartHouse MVC\SmartHouse MVC\bin\System.Web.WebPages.Deployment.xml
+E:\!SmartHouse\SmartHouse MVC\SmartHouse MVC\bin\System.Web.WebPages.Razor.xml
+E:\!SmartHouse\SmartHouse MVC\SmartHouse MVC\bin\Newtonsoft.Json.xml
+E:\!SmartHouse\SmartHouse MVC\SmartHouse MVC\bin\Antlr3.Runtime.pdb
+E:\!SmartHouse\SmartHouse MVC\SmartHouse MVC\obj\Debug\SmartHouse MVC.dll
+E:\!SmartHouse\SmartHouse MVC\SmartHouse MVC\obj\Debug\SmartHouse MVC.pdb
+E:\!SmartHouse\SmartHouse MVC\SmartHouse MVC\obj\Debug\SmartHouse MVC.csprojResolveAssemblyReference.cache

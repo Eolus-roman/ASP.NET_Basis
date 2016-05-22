@@ -1,0 +1,12 @@
+E:\!SmartHouse\SmartHouse C#\Smart House\Smart House\bin\Debug\Smart House.exe.config
+E:\!SmartHouse\SmartHouse C#\Smart House\Smart House\bin\Debug\Smart House.exe
+E:\!SmartHouse\SmartHouse C#\Smart House\Smart House\bin\Debug\Smart House.pdb
+E:\!SmartHouse\SmartHouse C#\Smart House\Smart House\obj\Debug\Smart House.csprojResolveAssemblyReference.cache
+E:\!SmartHouse\SmartHouse C#\Smart House\Smart House\obj\Debug\Smart House.exe
+E:\!SmartHouse\SmartHouse C#\Smart House\Smart House\obj\Debug\Smart House.pdb
+E:\!SmartHouse\Smart House\Smart House\obj\Debug\Smart House.pdb
+E:\!SmartHouse\Smart House\Smart House\bin\Debug\Smart House.pdb
+E:\!SmartHouse\Smart House\Smart House\obj\Debug\Smart House.csprojResolveAssemblyReference.cache
+E:\!SmartHouse\Smart House\Smart House\bin\Debug\Smart House.exe.config
+E:\!SmartHouse\Smart House\Smart House\bin\Debug\Smart House.exe
+E:\!SmartHouse\Smart House\Smart House\obj\Debug\Smart House.exe
