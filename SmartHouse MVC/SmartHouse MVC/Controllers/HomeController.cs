@@ -26,6 +26,7 @@ namespace SmartHouse_MVC.Controllers
             {
                 devicesDictionary = new SortedDictionary<int, Device>();
                 Create = new CreateNew();
+                
 
                 devicesDictionary.Add(1, Create.NewFridge());
                 devicesDictionary.Add(2, Create.NewHoover());
